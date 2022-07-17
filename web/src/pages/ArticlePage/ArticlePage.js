@@ -7,15 +7,10 @@ const ArticlePage = ({ id }) => {
     <>
       <MetaTags title="Article" description="Article page" />
 
-      <h1>ArticlePage</h1>
+      <ArticleCell id={id} />
       <p>
         Find me in <code>./web/src/pages/ArticlePage/ArticlePage.js</code>
       </p>
-      <p>
-        My default route is named <code>article</code>, link to me with `
-        <Link to={routes.article({ id: id })}>Article</Link>`
-      </p>
-      <ArticleCell id={id} />
     </>
   )
 }
